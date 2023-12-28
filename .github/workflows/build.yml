@@ -21,27 +21,15 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          sudo apt-get update
+          sudo apt-get install -y aidl build-essential libstdc++6 openjdk-8-jdk
 
       - name: Install Cython
         run: |
           sudo python -m pip install cython
-          
-      - name: Install AIDL + Build Essentail + Libstdc++6
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y aidl
-          sudo apt-get install build-essential
-          sudo apt-get install libstdc++6
-          sudo apt-get clean
-
-      - name: Install OpenJDK
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y openjdk-8-jdk
 
       - name: Install pyrosa
         run: |
-          sudo apt-get update
           sudo python -m pip install pyrosm
 
       - name: Download and unzip Android SDK
@@ -64,10 +52,11 @@ jobs:
       - name: Build with Buildozer
         run: |
           sudo apt-get update
+          cd $GITHUB_WORKSPACE  # Przejdź do katalogu projektu
           buildozer -v android debug --no-build-isolation
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: ./bin/*.apk
+          path: $GITHUB_WORKSPACE/bin/*.apk
