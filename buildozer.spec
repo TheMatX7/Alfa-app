@@ -1,99 +1,55 @@
 [app]
 
+# (list) Application requirements
+# comma separated e.g. requirements = sqlite3,kivy
+requirements = python3==3.9.10,kivy,beautifulsoup4,requests
+
 # (str) Title of your application
-title = My Application
+title = Alfa
 
 # (str) Package name
-package.name = myapp
+package.name = alfa
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.example
 
 # (str) Source code where the main.py live
-source.dir = .
-
-# (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas
 
-# (list) List of inclusions using pattern matching
-#source.include_patterns = assets/*,images/*.png
-
-# (list) Source files to exclude (let empty to not exclude anything)
-#source.exclude_exts = spec
-
-# (list) List of directory to exclude (let empty to not exclude anything)
-#source.exclude_dirs = tests, bin, venv
-
-# (list) List of exclusions using pattern matching
-# Do not prefix with './'
-#source.exclude_patterns = license,images/*/*.jpg
+# (list) Application source code
+source.include_exts = py,png,jpg,kv,atlas
 
 # (str) Application versioning (method 1)
-version = 0.1
+ version = 0.1
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
 
-# (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.9.10, hostpython3==3.9.10,kivy,beautifulsoup4,requests
+# (list) Application dependecies
+# comma separated e.g. deps = sqlite3,kivy
+# deps = 
 
-# (str) Custom source folders for requirements
-# Sets custom source for any requirements with recipes
-# requirements.source.kivy = ../../kivy
+# (str) Package author's name
+author = Ezio
 
-# (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+# (str) Package author's email
+#author.email = your.email@example.com
 
-# (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+# (str) Android/IOS app icon
+# Set app_icon to the path of an image file (at least 310x310 px).
+# app_icon = %(source.dir)s/icon.png
 
-# (list) Supported orientations
-# Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
+# (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
-
-# (list) List of service to declare
-#services = NAME:ENTRYPOINT_TO_PY,NAME2:ENTRYPOINT2_TO_PY
-
-#
-# OSX Specific
-#
-
-#
-# author = © Copyright Info
-
-# change the major version of python used by the app
-osx.python_version = 3
-
-# Kivy version to use
-osx.kivy_version = 1.9.1
-
-#
-# Android specific
-#
 
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
 
-# (string) Presplash background color (for android toolchain)
-# Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
-# red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
-# darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
-# olive, purple, silver, teal.
-#android.presplash_color = #FFFFFF
-
-# (string) Presplash animation using Lottie format.
-# see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
-# for general documentation.
-# Lottie files can be created using various tools, like Adobe After Effect or Synfig.
-#android.presplash_lottie = "path/to/lottie/file.json"
-
-# (str) Adaptive icon of the application (used if Android API level is 26+ at runtime)
-#icon.adaptive_foreground.filename = %(source.dir)s/data/icon_fg.png
-#icon.adaptive_background.filename = %(source.dir)s/data/icon_bg.png
-
 # (list) Permissions
+<<<<<<< HEAD
+android.permissions = INTERNET
+=======
 android.permissions = android.permission.INTERNET
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
 #android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
@@ -451,3 +407,4 @@ warn_on_root = 1
 #    Then, invoke the command line with the "demo" profile:
 #
 #buildozer --profile demo android debug
+>>>>>>> cb8a515278d6423ea49968efe44de4448353a5fe
