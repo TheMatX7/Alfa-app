@@ -75,27 +75,13 @@ osx.kivy_version = 1.9.1
 #
 # Android specific
 # (int) Android API to use
-cython.include_exts = *.pyx
-cython.stealthx = source_directory
-android.arch = armeabi-v7a
-android.api = 21
-android.ndk = 21.4.7075529
-android.gradle_dependencies = 'com.android.support:support-core-utils:26.1.0', 'com.android.support:appcompat-v7:26.1.0', 'com.android.support:recyclerview-v7:26.1.0', 'com.android.support:tablayout:26.1.0'
-android.pie = False
-android.xpermissions = INTERNET
-android.permissions = INTERNET
-android.include_exts = py,png,jpg,kv,atlas
-android.minapi = 21
-android.orientation = portrait
-android.requirements = python3,kivy,,pillow,beautifulsoup4,requests
-android.add_src =  random_roulette.c
-android.add_whitelist = 127.0.0.1
+
 
 # (int) Android build tools version to use
 android.build_tools = 28.0.3
 
 # (str) Android SDK version to use
-android.sdk = 28
+android.api = 28
 
 android.accept_sdk_license = True
 android.skip_update = False
