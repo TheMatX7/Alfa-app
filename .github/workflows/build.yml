@@ -26,10 +26,12 @@ jobs:
         run: |
           python -m pip install cython
           
-      - name: Install AIDL
+      - name: Install AIDL + Build Essentail + Libstdc++6
         run: |
           sudo apt-get update
           sudo apt-get install -y aidl
+          sudo apt-get install build-essential
+          sudo apt-get install libstdc++6
 
       - name: Install OpenJDK
         run: |

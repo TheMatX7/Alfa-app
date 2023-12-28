@@ -83,6 +83,9 @@ android.build_tools = 28.0.3
 # (str) Android SDK version to use
 android.sdk = 28
 
+android.accept_sdk_license = True
+android.skip_update = False
+
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
 
