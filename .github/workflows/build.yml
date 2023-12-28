@@ -59,7 +59,7 @@ jobs:
       - name: Build with Buildozer
         run: |
           sudo apt-get update
-          buildozer -v android debug
+          buildozer -v android debug --no-build-isolation
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v2
