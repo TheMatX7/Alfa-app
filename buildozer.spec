@@ -87,8 +87,7 @@ android.permissions = INTERNET
 android.include_exts = py,png,jpg,kv,atlas
 android.minapi = 21
 android.orientation = portrait
-android.requirements = python3,kivy,other_dependencies
-android.arch = armeabi-v7a
+android.requirements = python3,kivy,,pillow,beautifulsoup4,requests
 android.add_src =  random_roulette.c
 android.add_whitelist = 127.0.0.1
 
