@@ -17,7 +17,10 @@ package.domain = org.example
 source.include_exts = py,png,jpg,kv,atlas
 
 # (str) Application versioning (method 1)
- version = 0.1
+version = 0.1
+
+# (str) Plik główny kodu źródłowego
+source.main.filename = main.py
 
 # (str) Application versioning (method 2)
 # version.regex = __version__ = ['"](.*)['"]
