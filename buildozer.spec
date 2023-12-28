@@ -84,13 +84,11 @@ android.gradle_dependencies = 'com.android.support:support-core-utils:26.1.0', '
 android.pie = False
 android.xpermissions = INTERNET
 android.permissions = INTERNET
-android.gradle_dependencies = 'com.google.firebase:firebase-auth:22.0.0', 'com.google.firebase:firebase-database:22.0.0'
 android.include_exts = py,png,jpg,kv,atlas
 android.minapi = 21
 android.orientation = portrait
 android.requirements = python3,kivy,other_dependencies
 android.arch = armeabi-v7a
-android.gradle_dependencies = 'com.android.support:appcompat-v7:25.3.1', 'com.android.support:recyclerview-v7:25.3.1'
 android.add_src =  random_roulette.c
 android.add_whitelist = 127.0.0.1
 
