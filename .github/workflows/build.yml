@@ -24,7 +24,7 @@ jobs:
 
       - name: Install Cython
         run: |
-          python -m pip install cython
+          sudo python -m pip install cython
           
       - name: Install AIDL + Build Essentail + Libstdc++6
         run: |
@@ -38,6 +38,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y openjdk-8-jdk
+
+      - name: Install pyrosa
+        run: |
+          sudo apt-get update
+          sudo python -m pip install pyrosm
 
       - name: Download and unzip Android SDK
         run: |
