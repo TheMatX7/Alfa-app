@@ -74,7 +74,14 @@ osx.kivy_version = 1.9.1
 
 #
 # Android specific
-#
+# (int) Android API to use
+android.api = 28
+
+# (int) Android build tools version to use
+android.build_tools = 28.0.3
+
+# (str) Android SDK version to use
+android.sdk = 28
 
 # (bool) Indicate if the application should be fullscreen or not
 fullscreen = 0
