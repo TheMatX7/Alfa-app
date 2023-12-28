@@ -53,6 +53,7 @@ jobs:
         run: |
           sudo apt-get update
           cd $GITHUB_WORKSPACE  # Przejdź do katalogu projektu
+          export BOOTSTRAP_CLASS='-source 8'
           buildozer -v android debug --no-build-isolation
 
       - name: Upload APK artifact
