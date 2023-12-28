@@ -14,7 +14,6 @@ source.dir = .
 
 source.main.filename = main.py
 
-android.add_src = src/main/jni
 
 # (list) Source files to include (let empty to include all the files)
 source.include_exts = py,png,jpg,kv,atlas

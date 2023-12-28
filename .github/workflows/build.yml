@@ -25,6 +25,12 @@ jobs:
       - name: Install Cython
         run: |
           python -m pip install cython
+
+      - name: Install AIDL
+        run: |
+            sudo apt-get update
+            sudo apt-get install -y aidl
+  
           
 
       - name: Build with Buildozer
