@@ -21,7 +21,18 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          
+
+      - name: Install OpenJDK
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y openjdk-8-jdk
+
+      - name: Download and unzip Android SDK
+        run: |
+          wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip
+          unzip commandlinetools-linux-7583922_latest.zip -d $HOME/android-sdk
+          echo "export PATH=\$PATH:\$HOME/android-sdk/cmdline-tools/bin" >> $HOME/.bashrc
+          source $HOME/.bashrc
 
       - name: Accept Android licenses
         run: |
