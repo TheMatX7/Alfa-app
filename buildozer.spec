@@ -9,8 +9,7 @@ package.name = alfa_app
 # (str) Nazwa pakietu w formie 'com.twoje.imie.nazwisko'
 package.domain = com.twoje.imie.nazwisko
 
-# (str) Wersja twojej aplikacji
-package.version = 0.1
+version = 0.1
 
 # (list) Wymagane zależności
 requirements = python3==3.9.10,kivy,beautifulsoup4,requests
