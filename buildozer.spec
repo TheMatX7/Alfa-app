@@ -44,9 +44,7 @@ orientation = portrait
 fullscreen = 0
 
 # (list) Permissions
-<<<<<<< HEAD
-android.permissions = INTERNET
-=======
+
 android.permissions = android.permission.INTERNET
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
 #android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
@@ -404,4 +402,3 @@ warn_on_root = 1
 #    Then, invoke the command line with the "demo" profile:
 #
 #buildozer --profile demo android debug
->>>>>>> cb8a515278d6423ea49968efe44de4448353a5fe
