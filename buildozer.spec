@@ -13,8 +13,21 @@ package.name = alfa
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.example
 
-# (list) Application source code
-source.include_exts = py,png,jpg,kv,atlas
+# (list) Pliki / katalogi do uwzględnienia w archiwum
+source.exclude_exts = pyc,pyo,pyd,db,json,png,jpg,jar,kv,atlas
+source.exclude_patterns = images/*.xcf, .git/*
+
+# (str) Plik główny kodu źródłowego
+source.main.filename = main.py
+
+# (str) Katalog, w którym znajdują się pliki źródłowe
+source.dir = .
+
+# (str) Wersja Kivy
+osx.python_version = 3.8.10
+osx.kivy_version = 2.1.0
+ios.kivy_version = 2.1.0
+android.kivy_version = 2.1.0
 
 # (str) Application versioning (method 1)
 version = 0.1
